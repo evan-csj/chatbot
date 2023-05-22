@@ -6,9 +6,8 @@ const PORT = 8080;
 const { dockStart } = require("@nlpjs/basic");
 
 (async () => {
-    const dock = await dockStart();
-    const nlp = dock.get('nlp');
-  })();
+  await dockStart();
+})();
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
