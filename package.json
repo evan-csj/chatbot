@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@nlpjs/basic": "^4.26.1",
+    "@nlpjs/console-connector": "^4.26.1",
     "@nlpjs/directline-connector": "^4.26.1",
     "@nlpjs/express-api-server": "^4.26.1",
     "cors": "^2.8.5",
