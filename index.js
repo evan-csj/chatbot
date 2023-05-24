@@ -9,26 +9,26 @@ app.use(express.json());
 const { dockStart } = require("@nlpjs/basic");
 
 (async () => {
-  const dockConfiguration = {
-    settings: {
-      nlp: { corpora: ["./corpora/corpus-en.json"] },
-    },
-    use: ["Basic", "ConsoleConnector"],
-  };
-  const dock = await dockStart(dockConfiguration);
-  const nlp = dock.get("nlp");
-  await nlp.train();
+    const dockConfiguration = {
+        settings: {
+            nlp: { corpora: ["./corpora/corpus-en.json"] },
+        },
+        use: ["Basic", "ConsoleConnector"],
+    };
+    const dock = await dockStart(dockConfiguration);
+    const nlp = dock.get("nlp");
+    await nlp.train();
 
-  app.post("/chatbot", async (req, res) => {
-    const text = req.body.text;
-    const response = await nlp.process("en", text);
-    setTimeout(
-      () => res.status(200).json(response.answer),
-      Math.floor(Math.random() * 2000)
-    );
-  });
+    app.post("/chatbot", async (req, res) => {
+        const text = req.body.text;
+        const response = await nlp.process("en", text);
+        setTimeout(
+            () => res.status(200).json(response.answer),
+            Math.floor(Math.random() * 2000)
+        );
+    });
 })();
 
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+    console.log(`Server is running on port ${PORT}`);
 });
