@@ -22,10 +22,10 @@ const { dockStart } = require("@nlpjs/basic");
     app.post("/chatbot", async (req, res) => {
         const text = req.body.text;
         const response = await nlp.process("en", text);
-        setTimeout(
-            () => res.status(200).json(response.answer),
-            Math.floor(Math.random() * 2000)
-        );
+        res.status(200).json({
+            intent: response.intent,
+            answer: response.answer,
+        });
     });
 })();
 
