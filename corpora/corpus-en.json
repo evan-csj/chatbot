@@ -146,9 +146,9 @@
         {
             "intent": "agent.boss",
             "utterances": [
-				"who create you",
-				"who creates you",
-				"who created you",
+                "who create you",
+                "who creates you",
+                "who created you",
                 "who is your master",
                 "who do you work for",
                 "who do you think is your boss",
@@ -157,8 +157,10 @@
                 "who is the boss"
             ],
             "answers": [
-                "My boss is Evan Cheng",
-                "Evan Cheng developed me"
+                "My boss is Evan",
+                "My master is Evan",
+                "Evan developed me",
+                "Evan created me"
             ]
         },
         {
@@ -812,31 +814,49 @@
                 "I'm not sure I'll have the best answer, but I'll try"
             ]
         },
-		{
-            "intent": "user.step-2",
+        {
+            "intent": "nav.step-2",
             "utterances": [
                 "I wanna go to location",
-                "Location",
+                "I want to change the location",
                 "Country",
-				"I want to choose my business location",
-				"Like to pick my place of business"
+                "I want to choose my business location",
+                "Like to pick my place of business",
+                "Go to step 2"
             ],
-            "answers": [
-                "Let's go to pick your location!"
-            ]
+            "answers": ["Let's go to pick your location!"]
         },
-		{
-            "intent": "user.step-3",
+        {
+            "intent": "nav.step-3",
             "utterances": [
-                "I choose my theme",
-                "Theme",
-                "Color theme",
-				"I want to choose my color theme",
-				"I wanna pick my store theme"
+                "I choose the theme",
+                "I want to change my theme",
+                "I want to choose color theme",
+                "I wanna pick my store theme",
+                "Go to step 3"
             ],
-            "answers": [
-                "Let's go to pick your theme!"
-            ]
+            "answers": ["Let's go to pick your theme!"]
+        },
+        {
+            "intent": "nav.step-4",
+            "utterances": [
+                "I choose the color palette",
+                "I wanna pick the style",
+                "I want to change my color palette",
+                "Go to step 4"
+            ],
+            "answers": ["Let's go to pick your color palette!"]
+        },
+        {
+            "intent": "nav.step-5",
+            "utterances": [
+                "I upload logo",
+                "I wanna scale size of logo",
+                "I want to select favicon",
+                "I want to upload image and icon",
+                "Go to step 5"
+            ],
+            "answers": ["Let's go to upload your Logo!"]
         },
         {
             "intent": "None",
