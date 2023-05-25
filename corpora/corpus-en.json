@@ -820,6 +820,15 @@
             ]
         },
         {
+            "intent": "nav.step-1",
+            "utterances": [
+                "I wanna choose the type of my business",
+                "I want to change the kind of work",
+                "Go to step 1"
+            ],
+            "answers": ["Let's go to pick your kind of work!"]
+        },
+        {
             "intent": "nav.step-2",
             "utterances": [
                 "I wanna go to location",
