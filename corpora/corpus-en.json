@@ -3,6 +3,11 @@
     "locale": "en-US",
     "data": [
         {
+            "intent": "agent.shopify",
+            "utterances": ["best", "awesome"],
+            "answers": ["Shopify is the best company"]
+        },
+        {
             "intent": "agent.whereami",
             "utterances": ["where am i", "where am i talking"],
             "answers": [
@@ -857,6 +862,25 @@
                 "Go to step 5"
             ],
             "answers": ["Let's go to upload your Logo!"]
+        },
+        {
+            "intent": "nav.home",
+            "utterances": [
+                "I want to go to home",
+                "I want to go the begin",
+                "I want to start at the beginning",
+                "I want to start over again"
+            ],
+            "answers": ["Let's start over again!"]
+        },
+        {
+            "intent": "nav.themes",
+            "utterances": [
+                "I want to skip",
+                "I want to customize the themes",
+                "I want to go to the end"
+            ],
+            "answers": ["Let's do themes customizing!"]
         },
         {
             "intent": "None",
